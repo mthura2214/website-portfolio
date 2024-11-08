@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="My Personal Website">
+        <meta name="author" content="Mthuthuzeli Magidigidi">
+        <meta http-equiv="refresh" content="50">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mthuthuzeli Magidigidi Website Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <h4><i class="fa-solid fa-crown"></i>MT Editor</h4>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Hi, I am <br> Mthuthuzeli Magidigidi</h1>
+                <p>And Welcome to my Portfolio Website</p>
+                <a href="contact.html" class="hero-btn">CONTACT US</a>
+            </div>
+
+        </section>
+
+        <!--Course Section-->
+        <section class="course">
+        <div class="row">
+                <div class="course-col">
+                    <a href="resume.html" class="h3-txt"><h3>Resume</h3></a>
+                   <p>Interested in learning more about my skills, experience, and past projects? Click the button below to view my full resume and see how I can contribute to your next project</p>
+                </div>
+                <div class="course-col">
+                    <a href="services.html" class="h3-txt"><h3>Services</h3></a>
+                  <p>Looking for professional software development services? Click the button below to explore the range of solutions I offer, from custom applications to system optimization and more. Let’s bring your ideas to life!</p>
+                </div>
+                <div class="course-col">
+                    <a href="about.html" class="h3-txt"><h3>About Me</h3></a>
+                    <p>Curious about who I am and what drives my work? Click the button below to learn more about my journey, skills, and passion for creating impactful software solutions.</p>
+                </div>
+        </div>
+        </section>
+        <!--------campus section--------->
+        <section class="entrol">
+            <h1>Building innovative solutions with code <br>  and turning ideas into digital experiences.</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+           
+
+        </section>
+
+         <!----------------------Footer section------------------------>
+
+         <section class="footer">
+            <div class="icons">
+                <p>&copy; 2024 Mthuthuzeli Magidigidi. All rights reserved.<br>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin" ></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p> Made with <i class="fa-solid fa-heart"></i> By Easy MT Editor</p>
+         </section>
+        <script>
+           
+
+
+
+            var navlinks = document.getElementById("navlinks")
+
+            function showMenu(){
+                navlinks.style.right="0";
+            }
+
+            function hideMenu(){
+                navlinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="My Personal Website">
+        <meta name="author" content="Mthuthuzeli Magidigidi">
+        <meta http-equiv="refresh" content="50">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mthuthuzeli Magidigidi Website Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    </head>
+    <body>
+        <section class="header-about">
+            <nav>
+                <h4><i class="fa-solid fa-crown"></i>MT Editor</h4>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Hi, I am <br> Mthuthuzeli Magidigidi</h1>
+                <p>And Welcome to my Portfolio Website</p>
+                <a href="contact.html" class="hero-btn">CONTACT US</a>
+            </div>
+
+        </section>
+
+        <!--Course Section-->
+        <section class="course">
+            <h1>
+                About Me</h1>
+            <p>About me I am a passionate and results-driven software developer with experience in building scalable and efficient applications. Proficient in a range of programming languages and technologies, I thrive on solving complex problems and delivering high-quality, user-centric solutions. With a focus on clean code, continuous learning, and collaboration, I am always looking for new challenges to expand my skills and contribute to impactful projects.</p>
+        <div class="row">
+                <div class="course-col">
+                    <h3>Web Developer</h3>
+                  <p>As a Web Developer, I specialize in building responsive, dynamic, and user-friendly websites and web applications. With expertise in front-end technologies such as HTML, CSS, and JavaScript, as well as back-end frameworks like node.js</p>
+                </div>
+                <div class="course-col">
+                    <h3>API Developer</h3>
+                  <p>As an API Developer, I design and build robust, scalable, and efficient APIs that enable seamless communication between applications and services. </p>
+                </div>
+                <div class="course-col">
+                    <h3>Mobile Developer</h3>
+                  <p>As a Mobile Developer, I specialize in creating intuitive, user-friendly applications for both iOS and Android platforms. With a focus on performance, functionality, and seamless user experiences.</p>
+                </div>
+        </div>
+        </section>
+        <!--------campus section--------->
+        <section class="campus">
+            <h1>My Skills</h1>
+            <p>Below is a list of the skills I’ve acquired during my one-week learnership with Capaciti, in partnership with Ardagh.</p>
+         <div class="row">
+            <div class="campus-col">
+                <img src="images/css-image.png">
+                <div class="layer">
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/css-image.png">
+                <div class="layer">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/css-image.png">
+                <div class="layer">
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+         </div>
+        </section>
+
+        
+        <!----------------------Enroll section------------------------>
+        <section class="entrol">
+            <h1>Building innovative solutions with code <br>  and turning ideas into digital experiences.</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+           
+
+        </section>
+
+
+         <!----------------------Footer section------------------------>
+
+         <section class="footer">
+            <div class="icons">
+                <p>&copy; 2024 Mthuthuzeli Magidigidi. All rights reserved.<br>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin" ></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-facebook"></i>
+            </div>
+            <p> Made with <i class="fa-solid fa-heart"></i> By Easy MT Editor</p>
+         </section>
+        <script>
+           
+
+
+
+            var navlinks = document.getElementById("navlinks")
+
+            function showMenu(){
+                navlinks.style.right="0";
+            }
+
+            function hideMenu(){
+                navlinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+</html>
