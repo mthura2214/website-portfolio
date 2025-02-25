@@ -450,6 +450,14 @@ h3{
     width: 100%;
     text-align: center;
     padding: 0 0;
+    text-align: center;
+    color: #333;
+    padding: 10px;
+    font-size: large;
+    background-color: rgb(250, 227, 230);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-top: 40px;
 
   }
   .footer h4{
