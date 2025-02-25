@@ -9,30 +9,144 @@
         <title>Mthuthuzeli Magidigidi Website Portfolio</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+        <style>
+            /* Navigation Bar */
+           .navbar {
+             margin: 0;
+             padding: 0;
+             display: flex;
+             align-items: center;
+             background-color: gray;
+             position: static;
+             justify-content: flex-end;
+             top: 0;
+             z-index: 1;
+             width: 100%;
+           }
+           .navbar ul {
+             display: flex;
+             list-style: none;
+             margin: 20px 0px;
+             padding: 0px;
+           }
+           .navbar ul li {
+             font-family: "Times New Roman", Times, serif;
+             font-weight: bold;
+           }
+           .navbar ul li a {
+             text-decoration: none;
+             color: white;
+             padding: 12px 20px;
+             margin: 0 15px;
+             transition: all 0.3s ease-in-out;
+             border-radius: 4px;
+           }
+           .navbar ul li a:hover {
+             background-color: rgb(250, 212, 218);
+             color: #666;
+           }
+           body {
+             font-family: Arial, sans-serif;
+             flex-direction: column;
+             display: flex;
+             align-items: center;
+           }
+           .contact-container {
+             background: transparent;
+             padding: 40px;
+             border-radius: 8px;
+             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+             max-width: 400px;
+             width: 100%;
+             text-align: center;
+             margin-top: 80px;
+           }
+           h1 {
+             font-size: 24px;
+             margin-bottom: 20px;
+             color: #333;
+           }
+           p {
+             font-size: 14px;
+             color: #666;
+             margin-bottom: 30px;
+           }
+           form {
+             display: flex;
+             flex-direction: column;
+             gap: 15px;
+           }
+           input, textarea {
+             width: 100%;
+             padding: 10px;
+             font-size: 16px;
+             border: 1px solid #ddd;
+             border-radius: 5px;
+             transition: border-color 0.3s;
+           }
+           input:focus, textarea:focus {
+             border-color: #333;
+             outline: none;
+           }
+           textarea {
+             resize: vertical;
+             height: 100px;
+           }
+           .submit-btn {
+             background-color: orange;
+             color: #555;
+             padding: 10px;
+             font-size: 16px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             transition: background-color 0.3s;
+           }
+           .submit-btn:hover {
+             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+           }
+           .footer {
+             text-align: center;
+             color: #333;
+             padding: 10px;
+             font-size: large;
+             background-color: rgb(250, 227, 230);
+             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+             width: 100%;
+             margin-top: 40px;
+           }
+           footer i {
+             margin: 5px;
+             color: #f16371;
+           }
+           i {
+             margin: 5px;
+             color: #f16371;
+             transition: color 0.2s ease-in-out;
+             text-decoration: none;
+           }
+           i:hover {
+             color: white;
+           }
+           .fa-solid {
+             padding: 0;
+             margin-right: 10px;
+             color: orange;
+             cursor: pointer;
+           }
+         </style>
     </head>
     <body>
-        <section class="header-about">
-            <nav>
-                <h4><i class="fa-solid fa-crown"></i>MT Editor</h4>
-                <div class="nav-links" id="navlinks">
-                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="resume.html">RESUME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="services.html">SERVICES</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </div>
-                <i class="fa fa-bars"onclick="showMenu()"></i>
-            </nav>
-            <div class="text-box">
-                <h1>Hi, I am <br> Mthuthuzeli Magidigidi</h1>
-                <p>And Welcome to my Portfolio Website</p>
-                <a href="contact.html" class="hero-btn">CONTACT US</a>
-            </div>
-
-        </section>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
 
         <!--Course Section-->
         <section class="course">

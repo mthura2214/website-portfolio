@@ -6,13 +6,14 @@
         <meta name="author" content="Mthuthuzeli Magidigidi">
         <meta http-equiv="refresh" content="50">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mthuthuzeli Magidigidi Website Portfolio</title>
+        <title>Mthuthuzeli Magidigidi - Skills</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
     </head>
     <body>
         <section class="header">
             <nav>
+                <h4><i class="fa-solid fa-crown"></i>MT Editor</h4>
                 <div class="nav-links" id="navlinks">
                     <i class="fa fa-window-close" onclick="hideMenu()"></i>
                     <ul>
@@ -33,24 +34,47 @@
             </div>
 
         </section>
-
-         <!----------------------Footer section------------------------>
-
-         <section class="footer">
-            <div class="icons">
-                <p>&copy; Copyrigh <b>Mthuthuzeli Magidigidi</b> All rights reserved.<br>
-                    <a href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=100"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/mthuthuzeli-magidigidi/"><i class="fa-brands fa-linkedin" ></i></a>
-                    <a href="https://github.com/mthura2214"><i class="fa-brands fa-github"></i></a>
+        <!-- Skills Section -->
+        <section class="campus">
+            <h1>My Skills</h1>
+            <p>Below is a list of my skills I’ve acquired during my learnership with Capaciti, in partnership with Ardagh.</p>
+            <div class="row">
+                <div class="campus-col">
+                    <img src="images/css.jpg" alt="HTML">
+                    <div class="layer">
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/css-image.png" alt="CSS">
+                    <div class="layer">
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/css.jpg" alt="JavaScript">
+                    <div class="layer">
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
             </div>
-            <p> Made with <i class="fa-solid fa-heart"></i> By Easy MT Editor</p>
-         </section>
+        </section>
+        
+
+        <!-- Footer Section -->
+        <section class="footer">
+            <div class="icons">
+                <p>&copy; 2024 Mthuthuzeli Magidigidi. All rights reserved.<br>
+                    <a href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=100"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/mthuthuzeli-magidigidi/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/mthura2214"><i class="fa-brands fa-github"></i></a>
+                </p>
+            </div>
+            <p>Made with <i class="fa-solid fa-heart"></i> By Easy MT Editor</p>
+        </section>
+
         <script>
-           
-
-
-
-            var navlinks = document.getElementById("navlinks")
+            var navlinks = document.getElementById("navlinks");
 
             function showMenu(){
                 navlinks.style.right="0";
@@ -60,6 +84,5 @@
                 navlinks.style.right="-200px";
             }
         </script>
-
     </body>
 </html>

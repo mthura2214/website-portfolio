@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mthuthuzeli Magidigidi Website Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Contact Us</title>
     <style>
        /* Navigation Bar */
       .navbar {
         margin: 0;
+        padding: 0;
         display: flex;
         align-items: center;
         background-color: gray;
@@ -44,18 +44,12 @@
         background-color: rgb(250, 212, 218);
         color: #666;
       }
- 
       body {
         font-family: Arial, sans-serif;
         flex-direction: column;
         display: flex;
         align-items: center;
-        
       }
-     /* body {
-      font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-*/
       .contact-container {
         background: transparent;
         padding: 40px;
@@ -66,25 +60,21 @@
         text-align: center;
         margin-top: 80px;
       }
- 
       h1 {
         font-size: 24px;
         margin-bottom: 20px;
         color: #333;
       }
- 
       p {
         font-size: 14px;
         color: #666;
         margin-bottom: 30px;
       }
- 
       form {
         display: flex;
         flex-direction: column;
         gap: 15px;
       }
- 
       input, textarea {
         width: 100%;
         padding: 10px;
@@ -93,17 +83,14 @@
         border-radius: 5px;
         transition: border-color 0.3s;
       }
- 
       input:focus, textarea:focus {
         border-color: #333;
         outline: none;
       }
- 
       textarea {
         resize: vertical;
         height: 100px;
       }
- 
       .submit-btn {
         background-color: orange;
         color: #555;
@@ -114,19 +101,10 @@
         cursor: pointer;
         transition: background-color 0.3s;
       }
- 
       .submit-btn:hover {
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
- 
-      .success-message {
-        display: none;
-        color: #54ff3d;
-        margin-top: 20px;
-        font-size: 16px;
-      }
- 
-      footer {
+      .footer {
         text-align: center;
         color: #333;
         padding: 10px;
@@ -136,98 +114,89 @@
         width: 100%;
         margin-top: 40px;
       }
- 
       footer i {
         margin: 5px;
         color: #f16371;
       }
-      i{
+      i {
         margin: 5px;
         color: #f16371;
         transition: color 0.2s ease-in-out;
         text-decoration: none;
-       
       }
-      i:hover{
-        color:white ;
+      i:hover {
+        color: white;
       }
-      .fa-solid{
+      .fa-solid {
         padding: 0;
         margin-right: 10px;
         color: orange;
-       cursor: pointer;
+        cursor: pointer;
       }
-      h4{
-        color: #fff;
-      }
-      .icons a{
-        margin-left: 30px;
-      }
-     
- 
     </style>
 </head>
 <body>
- 
   <nav class="navbar">
     <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="resume.html">RESUME</a></li>
         <li><a href="about.html">ABOUT</a></li>
+        <li><a href="skills.html">SKILLS</a></li>
         <li><a href="services.html">SERVICES</a></li>
         <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
- 
+  
   <div class="contact-container">
     <h1>Contact Me</h1>
-    <p>For any queries or assistent? Fill out the form below, and we’ll get back to you soon.</p>
+    <p>For any queries or assistance, fill out the form below, and we’ll get back to you soon.</p>
    
-    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">                                                                                                                                            
-      <input type="hidden" name="access_key" value="b4c2104e-a475-4886-93a8-e55486929a2c">  
-     
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="b4c2104e-a475-4886-93a8-e55486929a2c">
+      
+      <!-- Form inputs -->
       <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <!-- change according to domain server!!   -->
-        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html">
-        <button type="submit" class="submit-btn">Send Message</button>
-    </form>
- 
-    <div class="success-message" id="successMessage">
-        Success! Your message has been sent.
-    </div>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      
+      <!-- Redirect URL after submission -->
+      <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html">
+      
+      <!-- Submit button -->
+      <button type="submit" class="submit-btn">Send Message</button>
+  </form>
+  
+  <div class="success-message" id="successMessage">
+      
   </div>
- 
+  
+  </div>
+
   <section class="footer">
     <div class="icons">
         <p>&copy; 2024 Mthuthuzeli Magidigidi. All rights reserved.<br>
             <a href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=100"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/mthuthuzeli-magidigidi/"><i class="fa-brands fa-linkedin" ></i></a>
+            <a href="https://www.linkedin.com/in/mthuthuzeli-magidigidi/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/mthura2214"><i class="fa-brands fa-github"></i></a>
     </div>
     <p> Made with <i class="fa-solid fa-heart"></i> By Easy MT Editor</p>
  </section>
- 
+
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
-   
-   // Add an event listener to the form submission
     document.getElementById("contactForm").addEventListener("submit", function (event) {
-    // Prevent the default form submission
-    event.preventDefault();
- 
-    // Trigger SweetAlert after form submission
-    Swal.fire({
+      event.preventDefault(); // Prevent default form submission
+      
+      // Trigger SweetAlert after form submission
+      Swal.fire({
         title: "Success",
         text: "Message sent successfully",
         icon: "success"
-    }).then(() => {
+      }).then(() => {
         // After the user acknowledges the SweetAlert message, submit the form
         document.getElementById("contactForm").submit();
+      });
     });
-});
- 
-</script>
+  </script>
 </body>
 </html>
